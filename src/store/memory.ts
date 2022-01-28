@@ -30,6 +30,7 @@ export const SexIdentity = {
 }
 
 export const globalDict = reactive({
+    readyForUsing: false,
     pageSelected: PageIdentity.homePage,
     moralis: Moralis,
     web3: new Web3(),

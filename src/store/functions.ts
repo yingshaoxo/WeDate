@@ -74,6 +74,7 @@ const functions = {
                 // do stuff with the user: edit info or explore
                 const userDetail = await functions.maralis.getUserDetailInfo(globalDict?.user?.id)
                 if (userDetail) {
+                    globalDict.readyForUsing = true
                     if (router.currentRoute.value.path === PageIdentity.chatPage) {
                         return
                     }

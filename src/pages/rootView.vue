@@ -1,6 +1,6 @@
 <template>
     <router-view></router-view>
-    <van-tabbar class="tabber" v-model="active">
+    <van-tabbar v-if="globalDict.readyForUsing" class="tabber" v-model="active">
         <!-- v-model="dict.data.activeTableIndex"
         @change="dict.functions.onTabIndexChange"-->
         <van-tabbar-item icon="home-o" replace :to="PageIdentity.explorePage">Explore</van-tabbar-item>
